@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 double f(int Arr[], int n)
 {
     if (n == 1)
