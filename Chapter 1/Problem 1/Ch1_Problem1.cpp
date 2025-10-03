@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int f(int a, int b){
-    if(a < b) return 0;
-    return 1 + f((a - b), b);
+int Quotient(int Dividend, int Divisor)
+{
+    if (Dividend < Divisor)
+        return 0;
+    return 1 + Quotient((Dividend - Divisor), Divisor);
 }

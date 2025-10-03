@@ -1,7 +1,7 @@
 public class Ch1_Problem1 {
-    public static int f(int a, int b) {
-        if (a < b)
+    public static int Quotient(int Dividend, int Divisor) {
+        if (Dividend < Divisor)
             return 0;
-        return 1 + f((a - b), b);
+        return 1 + Quotient((Dividend - Divisor), Divisor);
     }
 }
