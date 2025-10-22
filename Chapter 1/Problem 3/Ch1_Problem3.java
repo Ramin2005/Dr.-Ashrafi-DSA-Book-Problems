@@ -3,14 +3,13 @@ public class Ch1_Problem3 {
 
     // approach 1
     // Reverse(Array, ReverseEmptyArray, ArrayLength, ArrayLength)
-    public static void Reverse(int[] Arr, int[] ReverseArr, int n, int m) {
+    public static void Reverse(int[] Arr, int[] ReverseArr, int n, int l) {
         if (n == 1) {
-            ReverseArr[0] = Arr[(m - n)];
+            ReverseArr[0] = Arr[(l - n)];
         }
-
-        ReverseArr[(n - 1)] = Arr[(m - n)];
+        ReverseArr[(n - 1)] = Arr[(l - n)];
         --n;
-        Reverse(Arr, ReverseArr, n, m);
+        Reverse(Arr, ReverseArr, n, l);
     }
 
     // approach 2
