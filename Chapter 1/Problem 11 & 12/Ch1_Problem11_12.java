@@ -1,5 +1,5 @@
 
-public class Ch1_Problem11 {
+public class Ch1_Problem11_12 {
 
     // Combination(n, -1, -1, -1)
     public static void Combination(int n, int num10, int num5, int num2) {
