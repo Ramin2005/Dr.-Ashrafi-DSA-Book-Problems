@@ -13,7 +13,6 @@ public class Ch1_Problem11 {
             if (num2 == -1) {
                 num2 = 0;
             }
-
             System.out.printf("\n%d %d %d", num10, num5, num2);
             return;
         }
@@ -22,24 +21,27 @@ public class Ch1_Problem11 {
             return;
         }
 
+        if (num5 != -1) {
+            Combination((n % 2), num10, num5, (n / 2));
+            return;
+        }
+
         if (num10 == -1) {
             int temp = n / 10;
             for (int i = 0; i <= temp; i++) {
-                Combination((n - (10 * i)), i, num5, num2);
+                Combination(n, i, num5, num2);
+                n -= 10;
             }
-            num10 = 0;
+            n += 10;
         }
 
-        if (num5 == -1) {
+        if (num5 == -1 && num10 != -1) {
             int temp = n / 5;
             for (int i = 0; i <= temp; i++) {
-                Combination((n - (5 * i)), num10, i, num2);
+                Combination(n, num10, i, num2);
+                n -= 5;
             }
-
-            num5 = 0;
         }
-
-        Combination((n % 2), num10, num5, (n / 2));
     }
 
 }
