@@ -1,5 +1,5 @@
 
-public class Ch1_Problem18 {
+public class Ch1_Problem18_19 {
 
     public static boolean isDuplicate(String s) {
 
