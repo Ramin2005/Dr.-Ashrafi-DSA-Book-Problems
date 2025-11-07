@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-long fib(int n)
+long long fib(int n)
 {
 
     if (n < 2)
@@ -9,7 +9,7 @@ long fib(int n)
         return 1;
     }
 
-    long fibs[(n + 1)];
+    long long fibs[(n + 1)];
 
     fibs[0] = 1;
     fibs[1] = 1;
