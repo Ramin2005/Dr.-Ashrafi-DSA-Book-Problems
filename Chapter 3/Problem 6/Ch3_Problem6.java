@@ -36,8 +36,4 @@ public class Ch3_Problem6 {
         }
     }
 
-
-    public static void main(String[] args) {
-        khayamPascal(3);
-    }
 }
