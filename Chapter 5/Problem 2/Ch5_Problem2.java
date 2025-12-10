@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Queue;
 import java.util.Set;
@@ -9,17 +10,9 @@ public class Ch5_Problem2 {
     public static Set<Object> Sub(Stack<Object> s, Queue<Object> q) {
         Set<Object> out = new HashSet<>();
 
-        Object[] temp = s.toArray();
+        out.addAll(Arrays.asList(s.toArray()));
 
-        for (Object a : temp) {
-            out.add(a);
-        }
-
-        temp = q.toArray();
-
-        for (Object a : temp) {
-            out.add(a);
-        }
+        out.addAll(Arrays.asList(q.toArray()));
 
         return out;
     }
