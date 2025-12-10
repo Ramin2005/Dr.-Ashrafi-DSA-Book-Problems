@@ -3,7 +3,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Stack;
 
-public class Ch3_Problem3 {
+public class Ch5_Problem3 {
 
     public static void stackReverser(Stack<Object> s) {
         Queue<Object> temp = new ArrayDeque<>();
