@@ -45,6 +45,8 @@ public class Ch5_Problem11 {
 
             }
 
+            --this.size;
+
             return temp;
         }
 
